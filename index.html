@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ICT project Main</title>
+	<!-- bootstrap cdn -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- javascript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&family=Noto+Sans:ital,wdth,wght@1,95.7,541&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body class="vh-100 background">
+
+
+	<style>
+
+		 .background {background-image: url('bg.png');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: 100vw 700vh;
+    background-repeat: no-repeat;}
+
+		@media(max-width: 991px){
+			.sidebar {background-color: rgba(0, 0, 0, 0.20) !important;
+				backdrop-filter: blur(10px);}}
+
+		#blur {background-color: rgba(0, 0, 0, 0.5);
+			   backdrop-filter: blur(10px);
+		       }
+
+/*Fonts*/
+		.exile-regular {
+        font-family: "Exile", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        .noto-sans-<uniquifier> {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 541;
+        font-style: italic;
+        font-variation-settings:
+        "wdth" 95.7;
+        }
+
+        .oswald-<uniquifier> {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        }
+
+	</style>
+
+
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg text-light p-1" id="navbar" style="background-color: #182c25">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html"><h1 class="exile-regular text-light">Group 7</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+      <span class="navbar-toggler-icon border-0 rounded bg-light p-2 m-2 "></span>
+    </button>
+
+    <!-- Sidebar -->
+    <div class="sidebar offcanvas offcanvas-start sidebar-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title text-light exile-regular" id="offcanvasNavbarLabel">Group 7</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="members.html">Members</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="quarters.html">Quarters</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="whats_next.html">What's Next?</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="Rate Us.html">Rate Us</a>
+          </li>
+          
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center gap-3 flex-lg-row">
+        <form class="d-flex justify-content-center align-items-center gap-3 flex-lg-row" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+	 <div class="row gx-0">
+
+    <div class="col-md-6 border border-dark object-fit-lg-contain">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Gorillaz_Demon_Days.PNG" class="img-fluid" style="width:100%;">
+    </div>
+
+    <div class="col-md-6" id="blur">
+      <div class="col-12 border border-dark p-5" style="height:760px">
+      <br>
+      <br>
+      <h1 class="exile-regular text-light" style="font-size: 100px;"> Group 7 ----------</h1> <hr>
+      <br>
+      <h3 class="text-light" style="font-family: Noto Sans;">Hello, we are group 7. We are Kyrsten, Elaine, Yago, and Jacob learn more about us here: </h3> <button style="height:50px; width:100px" class="btn btn-success p-2" type="submit"><h3>click</h3></button><br><br></div>
+</div>
+
+
+    </div>
+
+    <div class="container-fluid row p-4" style="background-color: #306844;">
+
+    	<div class="col-lg-4 col-md-2">
+        <center>
+    		<img src="q1.png" class="d-none d-lg-block img-fluid" style="max-width: 100%; height: auto;">
+        </center>
+    	</div>
+
+      
+    	<div class="col-lg-8 gx-0 row">
+
+      <div class="container-fluid gx-0 row">
+      <!-- text head -->
+      <div class="col-4 d-md-none d-lg-none d-xl-none mt-4">
+        <center>
+      <img src="q2.png" class="d-md-none d-lg-none d-xl-none img-fluid" style="max-width: 50%; height: auto;">
+        </center>
+      </div>
+
+      <div class="col-8">
+      <b><h1 style="font-family:Oswald; font-size: 60px;" class="text-light"> What's Next? </h1></b>
+      </div>
+      </div>
+
+
+      <!-- text body -->
+      <h3 class="text-light"> To see our expectations for next year in ICT and what we plan to do in vacation, click here! </h3>
+      <br>
+      <a href="whats_next.html"><button style="height:50px; width:100px" class="btn btn-success p-2" type="submit"><h3>click</h3></button></a>
+
+      </div>
+      
+    </div>
+
+  
+
+
+
+       <br>
+       <br>
+
+ 
+   <div class="container-fluid row p-4" style="background-color: #1e453e;">
+
+
+      <div class="col-lg-4 col-md-2">
+        <center>
+        <img src="star1.png" class="d-none d-lg-block img-fluid" style="max-width: 50%; height: auto;">
+        </center>
+      </div>
+
+      
+      <div class="col-lg-8 gx-0 row">
+
+      <div class="container-fluid gx-0 row">
+      <!-- text head -->
+      <div class="col-4 d-md-none d-lg-none d-xl-none p-2">
+        <center>
+      <img src="star2.png" class="d-md-none d-lg-none d-xl-none img-fluid" style="max-width: 60%; height: auto;">
+        </center>
+      </div>
+
+      <div class="col-8 mt-2">
+      <b><h1 style="font-family:Oswald; font-size: 60px;" class="text-light"> Rate Us! </h1></b>
+      </div>
+      </div>
+
+
+      <!-- text body -->
+      <h3 class="text-light"> We'd like to hear from you! </h3>
+      <br>
+      <a href="Rate Us.html"><button style="height:50px; width:100px" class="btn btn-success p-2"><h3>Rate</h3></button></a> 
+
+      </div>
+    </div>
+
+
+   <br>
+
+   <div id="footer" class="bg-dark p-3">
+   	<center>
+  <p class="text-light">  &copy; 2025 ICT Team Project | Designed by [Group #7] </p>
+  </center>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&family=Noto+Sans:ital,wdth,wght@1,95.7,541&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Rate Us</title>
+</head>
+
+ <style>
+
+   .background {background-image: url('bg.png');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: 100vw 700vh;
+    background-repeat: no-repeat;}
+
+
+    @media(max-width: 991px){
+      .sidebar{background-color: rgba(0, 0, 0, 0.20) !important;
+        backdrop-filter: blur(10px);}}
+
+    #blur {background-color: rgba(0, 0, 0, 0.5);
+         backdrop-filter: blur(10px);
+           }
+
+/*Fonts*/
+    .exile-regular {
+        font-family: "Exile", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        .noto-sans-<uniquifier> {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 541;
+        font-style: italic;
+        font-variation-settings:
+        "wdth" 95.7;
+        }
+
+        .oswald-<uniquifier> {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        }
+
+        input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#cont {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+      </style>
+
+      <body class="vh-100 background">
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg text-light p-1" id="navbar" style="background-color: #182c25">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html"><h1 class="exile-regular text-light">Group 7</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+      <span class="navbar-toggler-icon border-0 rounded bg-light p-2 m-2 "></span>
+    </button>
+
+    <!-- Sidebar -->
+    <div class="sidebar offcanvas offcanvas-start sidebar-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title text-light exile-regular" id="offcanvasNavbarLabel">Group 7</h5>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="members.html">Members</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="quarters.html">Quarters</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="whats_next.html">What's Next?</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link text-light" href="Rate Us.html">Rate Us</a>
+          </li>
+          
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center gap-3 flex-lg-row">
+        <form class="d-flex justify-content-center align-items-center gap-3 flex-lg-row" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <br>
+
+
+
+<div class="container">
+  <h1 class="text-light" style="font-family: Oswald;">Rate us! We'd like to know what you think</h1>
+  <div id="cont">
+  <form action="action_page.php">
+
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+    <label for="Email">Email</label>
+    <input type="email" class="form-control" id="email"  placeholder="Your email.." required>
+
+    <br>
+
+    <label for="rating1">What would you rate this Website based on profile information?</label>
+    <select class="form-select" id="rate1">
+      <option>rate</option>
+      <option value="100">Good</option>
+      <option value="80">Neutral Good</option>
+      <option value="60">Neutral</option>
+      <option value="40">Neutral Bad</option>
+      <option value="20">Bad</option>
+    </select>
+
+    <label for="rating2">What would you rate this Website based on quarter projects?</label>
+    <select class="form-select" id="rate2">
+      <option>rate</option>
+      <option value="100">Good</option>
+      <option value="80">Neutral Good</option>
+      <option value="60">Neutral</option>
+      <option value="40">Neutral Bad</option>
+      <option value="20">Bad</option>
+    </select>
+
+    <label for="rating3">What would you rate this Website based on user interface?</label>
+    <select class="form-select" id="rate3">
+      <option>rate</option>
+      <option value="100">Good</option>
+      <option value="80">Neutral Good</option>
+      <option value="60">Neutral</option>
+      <option value="40">Neutral Bad</option>
+      <option value="20">Bad</option>
+    </select>
+
+    <label for="subject">Other Comments:</label>
+    <textarea id="comment" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" onclick="message()">
+
+  </form>
+</div>
+
+<br>
+
+<br>
+
+
+</div>
+
+<div id="footer" class="bg-dark p-3">
+    <center>
+  <p class="text-light">  &copy; 2025 ICT Team Project | Designed by [Group #7] </p>
+  </center>
+</div>
+
+<script>
+    function message(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var comment = document.getElementById("comment").value;
+        var rate1 = Number(document.getElementById("rate1").value);
+        var rate2 = Number(document.getElementById("rate2").value);
+        var rate3 = Number(document.getElementById("rate3").value);
+        var init_rate = Math.round((rate1 + rate2 + rate3)/3);
+
+    // conditionals for the uhh yeah
+         if(name === "" || email === "" || comment === ""){
+            alert("Please complete the form");
+        }else
+        if (init_rate >= 81 && init_rate <= 100)
+  {alert("Thank you for rating us an overall 5 stars. We appreciate your feedback.");}
+
+  else if (init_rate >= 61 && init_rate <= 80)
+ {alert("Thank you for rating us an overall 4 stars. We appreciate your feedback.");}
+   
+ else if (init_rate >= 41 && init_rate <= 60)
+ {alert("Thank you for rating us an overall 3 stars. We appreciate your feedback.");}
+   
+ else if (init_rate >= 21 && init_rate <= 40)  
+ {alert("Thank you for rating us an overall 2 stars. We appreciate your feedback.");}
+  
+ else  
+ {alert("Thank you for rating us an overall 1 star. We will learn from our mistakes and do better");}
+
+        }
+          
+    
+
+
+
+   
+
+</script>
+
+
+</body>
+</html
